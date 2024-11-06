@@ -8,71 +8,35 @@
     <!-- Link to Web Manifest for Android A2HS -->
     <link rel="manifest" href="manifest.json">
 
-    <style>
-        /* Universal reset */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    <!-- iOS A2HS meta tags -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <link rel="apple-touch-icon" href="https://storage.googleapis.com/msgsndr/IBXNtzbdJSoACGanMO32/media/66cfe5969f787252de88de86.png">
 
-        /* Full-screen setup */
-        html, body {
-            width: 100%;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #f7f7f7;
-            font-family: Arial, sans-serif;
-            overflow: hidden;
-        }
-
-        /* Full-Screen Container */
-        .form-container {
-            width: 100vw;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            background-color: #ffffff;
-            overflow-y: auto; /* Allows internal scrolling */
-        }
-
-        /* iframe Styling with Dynamic Height */
-        iframe {
-            width: 100%;
-            height: 100%; /* Full height to avoid cutoffs */
-            border: none;
-            border-radius: 3px;
-        }
-    </style>
 </head>
 <body>
 
-    <div class="form-container">
-        <iframe
-            src="https://api.leadconnectorhq.com/widget/form/hxhWkT9oMyktQmtsviT9"
-            id="inline-hxhWkT9oMyktQmtsviT9" 
-            data-layout="{'id':'INLINE'}"
-            data-trigger-type="alwaysShow"
-            data-trigger-value=""
-            data-activation-type="alwaysActivated"
-            data-activation-value=""
-            data-deactivation-type="neverDeactivate"
-            data-deactivation-value=""
-            data-form-name="Reuben"
-            data-height="958"
-            data-layout-iframe-id="inline-hxhWkT9oMyktQmtsviT9"
-            data-form-id="hxhWkT9oMyktQmtsviT9"
-            title="Reuben"
-        ></iframe>
-    </div>
-
+    <iframe
+      src="https://api.leadconnectorhq.com/widget/form/hxhWkT9oMyktQmtsviT9"
+      style="width:100%;height:100%;border:none;border-radius:3px"
+      id="inline-hxhWkT9oMyktQmtsviT9" 
+      data-layout="{'id':'INLINE'}"
+      data-trigger-type="alwaysShow"
+      data-trigger-value=""
+      data-activation-type="alwaysActivated"
+      data-activation-value=""
+      data-deactivation-type="neverDeactivate"
+      data-deactivation-value=""
+      data-form-name="Reuben"
+      data-height="958"
+      data-layout-iframe-id="inline-hxhWkT9oMyktQmtsviT9"
+      data-form-id="hxhWkT9oMyktQmtsviT9"
+      title="Reuben"
+    ></iframe>
+    
     <script src="https://link.msgsndr.com/js/form_embed.js"></script>
 
-    <!-- Register Service Worker -->
+    <!-- Register Service Worker for Android A2HS -->
     <script>
         if ('serviceWorker' in navigator) {
             navigator.serviceWorker.register('/service-worker.js')
