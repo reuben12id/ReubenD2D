@@ -2,7 +2,7 @@
   "name": "Client Info Form",
   "short_name": "Client Form",
   "description": "Client Information Form for Door-to-Door Collection",
-  "start_url": ".",
+  "start_url": "https://reuben12id.github.io/ReubenD2D/roof.html",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#0077cc",
