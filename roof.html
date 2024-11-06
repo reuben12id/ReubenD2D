@@ -13,27 +13,75 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
     <link rel="apple-touch-icon" href="https://storage.googleapis.com/msgsndr/IBXNtzbdJSoACGanMO32/media/66cfe5969f787252de88de86.png">
 
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Full-Screen Layout */
+        html, body {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f7f7f7;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Full height iframe */
+        iframe {
+            width: 100%;
+            flex: 1;
+            border: none;
+            border-radius: 3px;
+        }
+
+        /* Button Styling */
+        .home-button {
+            width: 100%;
+            padding: 15px;
+            background-color: #0077cc;
+            color: white;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            border-top: 1px solid #ddd;
+            cursor: pointer;
+        }
+        .home-button:hover {
+            background-color: #005fa3;
+        }
+    </style>
 </head>
 <body>
 
     <iframe
-      src="https://api.leadconnectorhq.com/widget/form/hxhWkT9oMyktQmtsviT9"
-      style="width:100%;height:100%;border:none;border-radius:3px"
-      id="inline-hxhWkT9oMyktQmtsviT9" 
-      data-layout="{'id':'INLINE'}"
-      data-trigger-type="alwaysShow"
-      data-trigger-value=""
-      data-activation-type="alwaysActivated"
-      data-activation-value=""
-      data-deactivation-type="neverDeactivate"
-      data-deactivation-value=""
-      data-form-name="Reuben"
-      data-height="958"
-      data-layout-iframe-id="inline-hxhWkT9oMyktQmtsviT9"
-      data-form-id="hxhWkT9oMyktQmtsviT9"
-      title="Reuben"
+        src="https://api.leadconnectorhq.com/widget/form/hxhWkT9oMyktQmtsviT9"
+        style="width:100%;height:100%;border:none;border-radius:3px"
+        id="inline-hxhWkT9oMyktQmtsviT9" 
+        data-layout="{'id':'INLINE'}"
+        data-trigger-type="alwaysShow"
+        data-trigger-value=""
+        data-activation-type="alwaysActivated"
+        data-activation-value=""
+        data-deactivation-type="neverDeactivate"
+        data-deactivation-value=""
+        data-form-name="Reuben"
+        data-height="958"
+        data-layout-iframe-id="inline-hxhWkT9oMyktQmtsviT9"
+        data-form-id="hxhWkT9oMyktQmtsviT9"
+        title="Reuben"
     ></iframe>
     
+    <!-- Home Button -->
+    <a href="/" class="home-button">Back to Home Page</a>
+
     <script src="https://link.msgsndr.com/js/form_embed.js"></script>
 
     <!-- Register Service Worker for Android A2HS -->
